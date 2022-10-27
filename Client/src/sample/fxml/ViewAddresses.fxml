@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: #61401F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ViewAddresses">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="1050.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/фон2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="332.0" layoutY="130.0" prefHeight="39.0" prefWidth="385.0" text="НАС МОЖНО НАЙТИ ПО АДРЕСАМ:" textFill="LEMONCHIFFON">
+            <font>
+                <Font name="Jokerman" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="logOutButton" layoutX="466.0" layoutY="555.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="119.0" style="-fx-background-color: #fffacd;" text="Выход">
+            <font>
+                <Font name="Jokerman" size="14.0" />
+            </font>
+        </Button>
+        <ScrollPane layoutX="168.0" layoutY="195.0" prefHeight="320.0" prefWidth="715.0">
+            <content>
+                <TableView fx:id="tableAddresses" prefHeight="318.0" prefWidth="713.0">
+                    <columns>
+                        <TableColumn fx:id="city" minWidth="200.0" prefWidth="209.60004884004593" text="Город" />
+                        <TableColumn fx:id="address" prefWidth="292.7999725341797" text="Адрес" />
+                        <TableColumn fx:id="telephone" prefWidth="210.39996337890625" text="Номер для связи" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="search" layoutX="830.0" layoutY="19.0" prefHeight="32.0" prefWidth="200.0" promptText="Поиск">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+    </children>
+</AnchorPane>

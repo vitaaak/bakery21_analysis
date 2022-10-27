@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: #61401F;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminMenu">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="1050.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/фон2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="307.0" layoutY="145.0" prefHeight="58.0" prefWidth="436.0" text="МЕНЮ АДМИНИСТРАТОРА" textFill="LEMONCHIFFON">
+            <font>
+                <Font name="Jokerman" size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="logOutButtonAdminMenu" layoutX="435.0" layoutY="531.0" mnemonicParsing="false" opacity="0.81" prefHeight="34.0" prefWidth="180.0" style="-fx-background-color: #fffacd;" text="Выход">
+            <font>
+                <Font name="Jokerman" size="16.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="170.0" fitWidth="175.0" layoutX="555.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/профиль.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="180.0" fitWidth="180.0" layoutX="320.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/адреса.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="222.0" fitWidth="221.0" layoutX="70.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="70.0">
+            <image>
+                <Image url="@../images/меню.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="userInfoAdminMenu" layoutX="550.0" layoutY="269.0" mnemonicParsing="false" opacity="0.7" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #fffacd;" text="Информация о пользователе системы" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Jokerman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="productsAdminMenu" layoutX="90.0" layoutY="269.0" mnemonicParsing="false" opacity="0.7" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #fffacd;" text="Работа с продукцией" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Jokerman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="addressesAdminMenu" layoutX="320.0" layoutY="269.0" mnemonicParsing="false" opacity="0.7" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #fffacd;" text="Управление адресами" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Jokerman" size="20.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="170.0" fitWidth="170.0" layoutX="784.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/пользователи.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="usersControlAdminMenu" layoutX="780.0" layoutY="267.0" mnemonicParsing="false" opacity="0.7" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #fffacd;" text="Управление пользователями" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Jokerman" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

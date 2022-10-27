@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: #61401F;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UpdateProduct">
+    <children>
+        <Pane prefHeight="600.0" prefWidth="160.0" style="-fx-border-color: #000000;" />
+        <ImageView fitHeight="600.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/kjhgf.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="logOutButton" layoutY="420.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="160.0" style="-fx-background-color: #61401F; -fx-border-color: #000000;" text="Выход" textFill="WHITE">
+            <font>
+                <Font name="Jokerman" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="506.0" fitWidth="890.0" layoutX="163.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="160.0">
+            <image>
+                <Image url="@../images/фон2.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="407.0" layoutY="144.0" prefHeight="58.0" prefWidth="396.0" text="ИЗМЕНЕНИЕ ПРОДУКТА" textFill="LEMONCHIFFON">
+            <font>
+                <Font name="Jokerman" size="36.0" />
+            </font>
+        </Label>
+        <Button fx:id="acceptProduct" layoutX="495.0" layoutY="535.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="220.0" style="-fx-background-color: #fffacd;" text="Готово">
+            <font>
+                <Font name="Jokerman" size="14.0" />
+            </font>
+        </Button>
+      <GridPane layoutX="347.0" layoutY="300.0" prefHeight="181.0" prefWidth="515.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+              <Label prefHeight="40.0" text="Название продукта" textFill="LEMONCHIFFON">
+                  <font>
+                      <Font name="Jokerman" size="24.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="productName" disable="true" prefHeight="35.0" prefWidth="300.0" GridPane.columnIndex="1" />
+              <Label prefHeight="40.0" text="Стоимость" textFill="LEMONCHIFFON" GridPane.rowIndex="1">
+                  <font>
+                      <Font name="Jokerman" size="24.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="price" prefHeight="35.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <Label text="Количество ккал" textFill="LEMONCHIFFON" GridPane.rowIndex="2">
+                  <font>
+                      <Font name="Jokerman" size="24.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="kcal" prefHeight="35.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+              <Label text="Вес продукта" textFill="LEMONCHIFFON" GridPane.rowIndex="3">
+                  <font>
+                      <Font name="Jokerman" size="24.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="weight" prefHeight="35.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Label layoutX="417.0" layoutY="229.0" prefHeight="32.0" prefWidth="384.0" text="Введите только ту информацию, которую надо изменить." textFill="LEMONCHIFFON">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
